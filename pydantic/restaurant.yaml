@@ -1,0 +1,42 @@
+name: Viafore's
+owner: Pat Viafore
+address: 123 Fake St. Fakington, FA 01234
+employees:
+  - name: Pat Viafore
+    position: Chef
+    payment_details:
+      bank_details:
+        routing_number: "123456789"
+        account_number: "123456789012"
+  - name: Mode-up McGee
+    position: Server
+    payment_details:
+      bank_details:
+        routing_number: "123456789"
+        account_number: "123456789012"
+  - name: Fabricated Frank
+    position: Sous Chef
+    payment_details:
+      bank_details:
+        routing_number: "123456789"
+        account_number: "123456789012"
+  - name: Illusory Ilsa
+    position: Host
+    payment_details:
+      bank_details:
+        routing_number: "123456789"
+        account_number: "123456789012"
+dishes:
+  - name: Pasta and Sausage
+    price_in_cents: 1295
+    description: Rigatoni and sausage with a tomato-garlic-basil sauce
+  - name: Pasta Bolognese
+    price_in_cents: 1495
+    description: Spaghetti with a rich tomato and beef sauce
+  - name: Caprse Salad
+    price_in_cents: 795
+    description: Tomato, buffalo mozzarella and basil
+    picture: caprese.png
+number_of_seats: 12
+to_go: true
+delivery: false
