@@ -44,5 +44,9 @@ def load_restaurant(filename: str) -> Restaurant:
         data = yaml.safe_load(yaml_file)
         return Restaurant(**data)
 
-res = load_restaurant('restaurant.yaml')
-print(res)
+try:
+    res = load_restaurant('restaurant.yaml')
+    print(res)
+except Exception as e:
+    print(f'e = {e}')
+
