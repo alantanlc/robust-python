@@ -1,4 +1,4 @@
-name: Viafore's
+name: Viafores
 owner: Pat Viafore
 address: 123 Fake St. Fakington, FA 01234
 employees:
@@ -27,7 +27,7 @@ employees:
         routing_number: "123456789"
         account_number: "123456789012"
 dishes:
-  - name: Pasta and Sausage
+  - name: Pasta
     price_in_cents: 1295
     description: Rigatoni and sausage with a tomato-garlic-basil sauce
   - name: Pasta Bolognese
