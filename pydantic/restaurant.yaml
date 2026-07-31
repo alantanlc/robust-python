@@ -27,7 +27,7 @@ employees:
         routing_number: "123456789"
         account_number: "123456789012"
 dishes:
-  - name: Pasta
+  - name: Pasta and Sausage
     price_in_cents: 1295
     description: Rigatoni and sausage with a tomato-garlic-basil sauce
   - name: Pasta Bolognese

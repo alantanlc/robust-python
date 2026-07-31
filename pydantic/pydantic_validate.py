@@ -1,7 +1,7 @@
 from typing import Optional
 
 from pydantic.dataclasses import dataclass
-from pydantic import constr, PositiveInt
+from pydantic import constr, PositiveInt, conlist
 
 from typing import Literal, Optional, Union
 
@@ -35,11 +35,11 @@ class Employee:
 
 @dataclass
 class Restaurant:
-    name: constr(pattern=r'^[a-zA-Z0-9]*$', min_length=1, max_length=16)
+    name: constr(pattern=r'^[a-zA-Z0-9]*$', min_length=1, max_length=17)
     owner: constr(min_length=1)
     address: constr(min_length=1)
-    employees: list[Employee]
-    dishes: list[Dish]
+    employees: conlist(Employee, min_length=2)
+    dishes: conlist(Dish, min_length=3)
     number_of_seats: PositiveInt
     to_go: bool
     delivery: bool
