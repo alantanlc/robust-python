@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 # @dataclass(eq=True, order=True)
 @dataclass(eq=True)
-class NutritionalInformation:
+class NutritionInformation:
     calories: int
     fat: int
     carbohydrates: int
@@ -20,10 +20,9 @@ class NutritionalInformation:
         return self >= rhs
 
 nutritionals = [
-    NutritionalInformation(calories=100, fat=1, carbohydrates=3),
-    NutritionalInformation(calories=50, fat=6, carbohydrates=4),
-    NutritionalInformation(calories=120, fat=12, carbohydrates=3),
+    NutritionInformation(calories=100, fat=1, carbohydrates=3),
+    NutritionInformation(calories=50, fat=6, carbohydrates=4),
+    NutritionInformation(calories=120, fat=12, carbohydrates=3),
 ]
 
 print(f'{sorted(nutritionals, reverse=True)=}')
-
